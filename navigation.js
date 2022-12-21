@@ -94,6 +94,21 @@ const SignedInStack = () => (
     </NavigationContainer>
 );
 
+const SignedOutStack = () => (
+    <NavigationContainer>
+        <Stack.Navigator
+            screenOptions={screenOptions}
+            initialRouteName="Login"
+        >
+            <Stack.Screen name="Login" component={LoginScreen} />
+        </Stack.Navigator>
+    </NavigationContainer>
+);
+
+
+
+
+
 export default SignedInStack;
 
 
